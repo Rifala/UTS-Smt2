@@ -1,0 +1,25 @@
+Soal : Apa yang dimaksud dengan Ajacent Matrix dalam Djikstra Algorithm, dan apa saja contohnya. Jelaskan secara detail beserta contohnya.
+
+Jawaban :
+- Adjacent Matrix merupkan tabel gabungan dari dua himpunan(array/matrix) yang saling berhubungan.
+- Ajacent matrix terdiri dari baris dan kolom.
+- Ajacent matrix diimplementasikan sebagai graph pada Djikstra Algorithm
+- Elemen dari array baris dan kolom yang saling berkaitan memiliki nilai != 0 atau >= 1.
+- Sedangkan elemen yang tidak saling berhubungan memiliki nilai 0.
+- Pada Djikstra Algorithm array yang digunakan merupakan array 2D karena terdapat baris dan kolom dimana
+  array pertama didefinisikan sebagai baris dan yang kedua sebagai kolom
+
+contoh :
+int graph[5][4] = new int[][] { { 0, 4, 8, 0 },
+                              { 4, 0, 2, 5 },
+                              { 8, 2, 0, 5 },
+                              { 0, 5, 5, 0 },
+                              { 0, 0, 9, 4 } };
+
+ array [5] merupakan baris
+ array [4] merupakan kolom
+
+
+- Penerapan graph/adjacent matrix pada Djikstra Algorithm ini digunakan untuk mencari jarak
+  terdekat dengan menambahkan nilai dalam setiap titik yang dilewati. Titik yang bernilai 0 mengartikan bahwa
+  titik tersebut tidak dapat dilewati
